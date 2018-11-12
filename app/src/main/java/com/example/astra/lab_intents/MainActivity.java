@@ -6,6 +6,7 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onClickImplicit(View view){
         Intent intent = new Intent("mk.ukim.finki.mpip.IMPLICIT_ACTION");
+        Toast.makeText(this, "Implicit intent broadcast", Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }
     public void onClickSend(View view){
